@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ethan Key | Projects</title>
+        <link type="text/css" rel="stylesheet" href="../globals.css">
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <header>
+                <h1>Ethan Key</h1>
+                <p>Resume Website</p>
+            </header>
+            <div id="container">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <main>
+                    <h2>Coding Projects</h2>
+                    <div id="proj-sec">
+                        <div>
+                            <h3>AccessiScan</h3>
+                            <a href="https://accessiscan.vercel.app/" target="_blank">
+                                <img id="projects" src="../src/accessiscan.png" alt="AccessiScan Project">
+                            </a>
+                            <a href="https://github.com/AccessiScan-XC475" target="_blank">
+                                <p>GitHub Repo</p>
+                            </a>
+                        </div>
+                        <div>
+                            <h3>Global Conflict Visualizer</h3>
+                            <img id="projects" src="../src/gcv3.png" alt="Global Conflict Visualizer Project">
+                            <a href="https://github.com/ethanrkey/global-conflict-visualizer" target="_blank">
+                                <p>GitHub Repo</p>
+                            </a>
+                        </div>
+                        <div>
+                            <h3>Stock Trading Simulator</h3>
+                            <img id="projects" src="../src/stocktrading.png" alt="Stock Trading Simulator Project">
+                            <a href="https://github.com/ethanrkey/stock-trading-app" target="_blank">
+                                <p>GitHub Repo</p>
+                            </a>
+                        </div>
+                        <div>
+                            <h3>Text Image Generator</h3>
+                            <img id="projects" src="../src/texttoimage.png" alt="Text Image Generator Project">
+                            <a href="https://github.com/ethanrkey/text-to-image" target="_blank">
+                                <p>GitHub Repo</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="calc">
+                        <h2 style="color: white;">JavaScript Calculator</h2>
+                        <p style="color: white;">Calculate the value of two numbers with the given operators:</p>
+                        <div style="display: flex; justify-content: center; gap: 30px;">
+                            <input type="text" id="first-number">
+                            <input type="text" id="second-number">
+                        </div>
+                        <div style="display: flex; justify-content: center; gap: 15px;">
+                            <button onclick="addition()"> + </button>
+                            <button onclick="subtraction()"> - </button>
+                            <button onclick="multiplication()"> * </button>
+                            <button onclick="division()"> / </button>
+                            <button onclick="power()"> ^ </button>
+                        </div>
+                        <button style="width: 20%;" onclick="clearContent()"> clear </button>
+                        <h3 id="output"></h3>
+                    </div>
+                </main>
+            </div>
+            <footer>
+                <p>All Rights Reserved by Ethan Key <a href="" style="color: white;">Credits</a> &copy;</p>
+            </footer>
+        </div>
+        <script src="projects.js"></script>
+    </body>
+</html>
