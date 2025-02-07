@@ -27,7 +27,11 @@
     height: 150px;
 }
 
-#projects,
+#projects{
+    max-width: 200px;
+    height: 200px;
+}
+
 #contact-icons,
 #schools{
     max-width: 200px;
@@ -54,6 +58,10 @@
     flex-direction: row;
     gap: 10px;
     padding: 10px;
+}
+
+#proj-title{
+    font-size: calc(1.2px + 1.2vw);
 }
 
 #calc{
@@ -86,10 +94,16 @@
     list-style-type: square;
 }
 
+#arrow{
+    font-size: calc(1.5px + 1.5vw); 
+    text-decoration: none;
+}
+
 /* Element selectors */
 
 body{
     height: 100vh;
+    font-size: calc(1.5px + 1.5vw);
 }
 
 header{
@@ -158,6 +172,10 @@ footer{
 }
 
 @media screen and (max-width: 750px) {
+    body{
+        font-size: calc(2px + 2vw);
+    }
+
     header{
         align-items: center;
     }
@@ -194,8 +212,17 @@ footer{
         overflow: visible;
     }
 
+    #proj-title{
+        font-size: calc(2px + 2vw);
+    }
+
     #contact-icons{
         width: 150px;
         height: 150px;
+    }
+
+    #arrow{
+        font-size: calc(3px + 3vw); 
+        text-decoration: none;
     }
 }
