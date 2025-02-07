@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ethan Key | Projects</title>
         <link type="text/css" rel="stylesheet" href="../globals.css">
     </head>
@@ -57,11 +58,11 @@
                         </div>
                     </div>
                     <div id="calc">
-                        <h2 style="color: white;">JavaScript Calculator</h2>
+                        <h2 style="color: white; padding-top: 8px;">JavaScript Calculator</h2>
                         <p style="color: white;">Calculate the value of two numbers with the given operators:</p>
-                        <div style="display: flex; justify-content: center; gap: 30px;">
-                            <input type="text" id="first-number">
-                            <input type="text" id="second-number">
+                        <div id="calc-vals" style="display: flex; justify-content: center; gap: 10px;">
+                            <p style="color: white">Value 1:</p><input type="text" id="first-number">
+                            <p style="color: white">Value 2:</p><input type="text" id="second-number">
                         </div>
                         <div style="display: flex; justify-content: center; gap: 15px;">
                             <button onclick="addition()"> + </button>

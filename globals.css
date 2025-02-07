@@ -3,6 +3,8 @@
     box-sizing: border-box;
 }
 
+/* ID selectors */
+
 #page-wrapper{
     width: 80vw;
     margin: 0 auto;
@@ -13,15 +15,15 @@
 }
 
 #exp-imgs{
-    width: 150px;
+    max-width: 150px;
     height: 150px;
 }
 
 #projects,
 #contact-icons,
 #schools{
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 #proj-sec{
@@ -55,10 +57,28 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
-    h3{
-        color: white;
-    }
 }
+
+#calc h3{
+    color: white;
+}
+
+#calc-vals{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    gap: 2px;
+}
+
+#circle-list{
+    list-style-type: circle;
+}
+
+#square-list{
+    list-style-type: square;
+}
+
+/* Element selectors */
 
 body{
     height: 100vh;
@@ -111,9 +131,10 @@ nav li{
 
 nav li:hover{
     background-color: #1c213d;
-    a{
-        color: #ffffff;
-    }
+}
+
+nav li:hover a{
+    color: #ffffff;
 }
 
 nav a{
@@ -133,6 +154,7 @@ main{
 footer{
     background-color: #1c213d;
     color: white;
+    text-align: center;
 }
 
 @media screen and (max-width: 750px) {
